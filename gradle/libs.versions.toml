@@ -1,0 +1,9 @@
+[versions]
+apple = "1.4"
+miglayout = "11.4.3"
+simon = "1.3.1-ba47b5e6-SNAPSHOT"
+
+[libraries]
+apple = { module = "com.apple:AppleJavaExtensions", version.ref = "apple" }
+miglayout = { module = "com.miglayout:miglayout-swing", version.ref = "miglayout" }
+simon = { module = "de.root1:simon", version.ref = "simon" }

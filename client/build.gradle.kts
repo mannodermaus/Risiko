@@ -1,8 +1,13 @@
 plugins {
-    id("java")
+    id("application")
 }
 
 dependencies {
     implementation(project(":commons"))
-    implementation("com.miglayout:miglayout:3.7.4")
+    implementation(libs.miglayout)
+}
+
+application {
+    mainClass = "risk.client.Client"
+    applicationDefaultJvmArgs = listOf("--add-exports", "java.desktop/com.apple.eawt=ALL-UNNAMED")
 }

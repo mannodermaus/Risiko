@@ -4,8 +4,9 @@ plugins {
 
 dependencies {
     // Moved to GitLab: https://gitlab.com/dev.root1.de/simon
-    api("de.root1:simon:1.3.0:jar-with-dependencies")
+    // (linked to locally compiled file as the remote Maven repo shut down)
+    api(variantOf(libs.simon) { classifier("jar-with-dependencies") })
 
     // Optional
-    compileOnly("com.apple:AppleJavaExtensions:1.4")
+    compileOnly(libs.apple)
 }

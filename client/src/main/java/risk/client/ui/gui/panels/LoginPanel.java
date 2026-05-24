@@ -131,7 +131,7 @@ public class LoginPanel extends DefaultPanel implements PanelInterface, Observer
 				
 				// Spieler-Array ziehen
 				Spieler[] spieler = ClientEngineNetwork.getEngine().getWelt().getSpieler();
-				Vector<Object> rows = new Vector<Object>(6);
+				Vector<Vector<String>> rows = new Vector<>(6);
 				Vector<Object> columns = new Vector<Object>();
 				columns.add("#");
 				columns.add("Name");

@@ -121,8 +121,8 @@ public class ServerGUI extends JFrame {
 				
 		// Spieler-Array ziehen
 		Spieler[] spieler = server.getWelt().getSpieler();
-		Vector<Object> rows = new Vector<Object>(6);
-		Vector<Object> columns = new Vector<Object>();
+		Vector<Vector<String>> rows = new Vector<>(6);
+		Vector<Object> columns = new Vector<>();
 		columns.add("#");
 		columns.add("Name");
 		columns.add("Farbe");

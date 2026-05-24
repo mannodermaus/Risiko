@@ -1,3 +1,3 @@
 # RISK
 
-<img src=".images/screen.png" width="500"/>
+<img src=".images/screen.png" alt="Screenshot"/>

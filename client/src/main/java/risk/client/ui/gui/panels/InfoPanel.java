@@ -82,7 +82,7 @@ public class InfoPanel extends DefaultPanel implements PanelInterface {
 		DefaultTableModel spielerModel = new DefaultTableModel();
 		// Spieler-Array ziehen
 		Spieler[] spieler = ClientEngineNetwork.getEngine().getWelt().getSpieler();
-		Vector<Object> spielerRows = new Vector<Object>(6);
+		Vector<Vector<String>> spielerRows = new Vector<>(6);
 		Vector<Object> spielerColumns = new Vector<Object>(2);
 		spielerColumns.add("Name");
 		spielerColumns.add("Farbe");
@@ -195,7 +195,7 @@ public class InfoPanel extends DefaultPanel implements PanelInterface {
 		
 		// Neues Model und neue Vektoren erstellen
 		DefaultTableModel standModel = new DefaultTableModel();
-		Vector<Object> standRows = new Vector<Object>(6);
+		Vector<Vector<String>> standRows = new Vector<>(6);
 		Vector<Object> standColumns = new Vector<Object>(2);
 		standColumns.add("Name");
 		standColumns.add("Länder");
